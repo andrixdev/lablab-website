@@ -1,4 +1,4 @@
-# Uploads the site to alexandrix.com/lablab-new on every push to master (FTPS).
+# Uploads the site to alexandrix.com/lablab-new on every push to master (FTP).
 # Needs four repository secrets: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD, FTP_SERVER_DIR.
 name: Deploy
 
@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          protocol: ftps
+          protocol: ftp
           exclude: |
             **/.git*
             **/.git*/**

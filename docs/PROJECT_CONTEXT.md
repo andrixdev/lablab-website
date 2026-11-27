@@ -25,7 +25,7 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 - Old site (French copy, member links): https://lablab.studio/
 - Brief "Refonte site internet LABLAB" (Océane): objectives, audiences, sitemap.
 - URLs: final https://lablab.studio/ (used in Open Graph tags); during development https://alexandrix.com/lablab or /lablab-new. All internal links are relative, so the site works in a subfolder.
-- Repo: https://github.com/andrixdev/lablab-website. Pushing to master deploys to alexandrix.com/lablab-new over FTPS (`.github/workflows/deploy.yml`; docs, Markdown and TASKLOG are not uploaded).
+- Repo: https://github.com/andrixdev/lablab-website. Pushing to master deploys to alexandrix.com/lablab-new over FTP (host has no FTPS; `.github/workflows/deploy.yml`; docs, Markdown and TASKLOG are not uploaded).
 - Tasks: `TASKLOG.txt` (priority order, waiting items, done log).
 - Contact: contact@lablab.studio · 36 Rue Émile Decorps, 69100 Villeurbanne · Instagram studio.lablab · Facebook lablab.studio
 
