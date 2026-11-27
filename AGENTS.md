@@ -5,6 +5,7 @@
 - Write **LABLAB** in capitals everywhere. Serious tone. Bilingual: English at the root, French in `fr/` with French file names; change both versions together and keep hreflang links in sync.
 - Header and footer are repeated in every page: change them everywhere at once.
 - After changing `styles.css` or `script.js`, bump the `?v=` number in every page so browsers refetch them.
+- Set background images inline (`style="background-image: url(...)"`), never through a CSS variable: its url() would resolve against the root stylesheet and break in `fr/`.
 - Images: set `width`/`height`, lazy-load below the fold, never the hero showreel. Resize before adding.
 - Assets live in `assets/` with descriptive, keyword-friendly file names; replace stand-ins in place.
 - SEO: external links get `target="_blank" rel="noopener"`; bold the first key term in a text; link to other pages where natural; keep `sitemap.xml` in sync when adding pages.

@@ -2,43 +2,42 @@ To do, in priority order
 Log of tasks done, wip and to be done
 
 TODO (in priority order)
+- Studio technical details on the Studio page (EN + FR), once the equipment list arrives (see WAITING)
+- Compact menu on mobile (the header wraps onto two lines)
 - Deploy security: switch from plain FTP to SFTP if the host offers it (FTP sends the password unencrypted)
-- Provide technical details about the studio
-- Compact menu on mobile (header wraps onto two lines)
+- Launch on https://lablab.studio/: point the deploy (or the domain) to the final host; canonical URLs, sitemap and robots.txt already target it
 
 WAITING FOR ALEX (ask again)
-- Studio equipment list
+- Studio equipment list (for the technical details above)
 - Rates and access conditions (studio, co-working)
 - Member quotes
 - Legal notice: publisher, publication director, host
-- Partner logos, white on transparent (HeavyM, Métropole de Lyon, Villeurbanne, DRAC are text placeholders; Notch and TouchDesigner are dark)
+- Partner logos, white on transparent, same *-logo.png names (HeavyM, Métropole de Lyon, Villeurbanne, DRAC are text placeholders; Notch and TouchDesigner are dark)
 - Member pictures and up-to-date descriptions
 
 WIP
 -
 
-DONE
-- 2026-11-27 Fixed broken header images on French pages: background images are now set inline (CSS-variable url() resolved against the root stylesheet)
+DONE (newest first)
+- 2026-11-27 Coherence review of the task log and docs; fixed a stray space in the footer credit ("ANDRIX®")
+- 2026-11-27 Studio cube redrawn from a real 3D projection: 55° turn around the up axis (10° past the symmetric view), orange front edge near the centre, dashed lines on the true hidden edges
 - 2026-11-27 Footer credit "Website by ANDRIX®" / "Site réalisé par ANDRIX®"; tagline after the copyright hidden on small screens
-- 2026-11-27 Studio cube rotation reduced to 10°
-- 2026-11-27 Studio cube redrawn from a real 3D projection (30° turn around the up axis); dashed lines are the true hidden edges
+- 2026-11-27 Fixed broken header images on French pages: background images are set inline (a url() inside a CSS variable resolves against the root stylesheet)
 - 2026-11-27 "LABLABers" renamed "members" everywhere (members.html, fr/membres.html, texts, links, sitemap)
 - 2026-11-27 About page: new "Our members" section linking to the members page (EN + FR)
 - 2026-11-27 Studio rental text reworded positively (tailored offer), EN + FR; "créateur·rice·s" → "créateurs"
-- 2026-11-27 Cache-busting: styles.css?v=2 and script.js?v=2 (the footer looked white because of a cached stylesheet)
-- 2026-11-27 French translation: fr/ folder (index, a-propos, studio, lablabers, partenaires, galerie, contact, mentions-legales), FR/EN switch in the menu, hreflang links, sitemap; original French texts reused from the old site and the brief
-- 2026-11-27 Footer moved to black: white outline, white logo and text, blue offset frame kept
+- 2026-11-27 Cache-busting: ?v= on styles.css and script.js in every page (currently v=4)
+- 2026-11-27 French translation in fr/ (index, a-propos, studio, membres, partenaires, galerie, contact, mentions-legales), FR/EN switch in the menu, hreflang links, sitemap; original French texts reused from the old site and the brief
+- 2026-11-27 Footer moved to black: white outline, white logo and text, blue offset frame
 - 2026-11-27 Automatic deploy live: every push to master uploads to https://alexandrix.com/lablab-new/ over FTP (host has no FTPS); docs, Markdown and TASKLOG are not uploaded
 - 2026-11-27 Pushed master to https://github.com/andrixdev/lablab-website
-- 2026-11-27 Moodboard a–e: HUD corner brackets on service cards (hover), faint grid on alternate sections, glowing squares (About), wireframe cube (Studio), orbit diagram for values (About); warm orange touches (one bracket corner, one square, one cube edge, orbit dots, link hover)
-- 2026-11-27 SEO a–i: external links in new tabs, bold keywords, internal links (member/partner anchors), descriptive media file names, keyword page titles and h1s, canonical + og:url, sitemap.xml, robots.txt, JSON-LD LocalBusiness, Google Maps reviews link, 640px showreel for phones (6.5 MB)
-- 2026-11-27 design-2026 branch deleted after merge
-- 2026-11-27 New graphic design (palette, Oswald/Overpass, square logo, offset frames, white footer) merged into master
-- 2026-11-27 Absorbed the "artistic lab" text into the home intro (Find us shortened to avoid repeating it)
-- 2026-11-27 Showreel trimmed: title card and end credits removed (4.0 s → 100.5 s, 96.5 s, 17 MB)
+- 2026-11-27 Moodboard a–e: HUD corner brackets on service cards (hover), faint grid on alternate sections, glowing squares (About), wireframe cube (Studio), orbit diagram for values (About); warm orange touches
+- 2026-11-27 SEO a–i: external links in new tabs, bold keywords, internal links, descriptive media file names, keyword titles and h1s, canonical + og:url, sitemap.xml, robots.txt, JSON-LD LocalBusiness, Google Maps reviews link, 640px showreel for phones (6.5 MB)
+- 2026-11-27 New graphic design (palette, Oswald/Overpass, square logo, offset frames) merged into master; design-2026 branch deleted
+- 2026-11-27 Absorbed the "artistic lab" text into the home intro
+- 2026-11-27 Showreel trimmed: title card and end credits removed (96.5 s, 17 MB)
 - 2026-11-27 Git repository created (master); input/ is git-ignored so the brief and source files are not deployed
-- 2026-11-27 Static rebuild of the WIP homepage (assets, showreel 72 MB → 17 MB)
-- 2026-11-27 Partners list updated (technical + institutional)
+- 2026-11-27 Brief review → multi-page site (About, Studio, Members, Partners, Gallery, Contact, Legal notice), SEO meta
 - 2026-11-27 Sticky header that hides on scroll down
-- 2026-11-27 Brief review → multi-page site (About, Studio, LABLABers, Partners, Gallery, Contact, Legal), SEO meta
-- 2026-11-27 Domain noted in docs: dev at alexandrix.com/lablab(-new), final at lablab.studio
+- 2026-11-27 Partners list updated (technical + institutional)
+- 2026-11-27 Static rebuild of the WIP homepage (assets, showreel 72 MB → 17 MB)

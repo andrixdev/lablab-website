@@ -5,11 +5,11 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 ## Decisions
 
 - Static HTML/CSS, no CMS; later edits by hand or by AI. (The original brief asked for WordPress: overruled.)
-- Bilingual: English at the root, French in `fr/` (a-propos, membres, partenaires, galerie, mentions-legales…). FR/EN switch in the menu, hreflang links, both in the sitemap. Inclusive writing (·) in French, as on the old site.
-- Visual identity 2026 (input/NEW GRAPHIC DESIGN.png): black, océan abyssal #1E4694, océan numérique #05A7C7, white; Oswald 300 uppercase titles, Overpass 200 body; LABLAB logo (square in header); offset colour frames, glowing outlines.
+- Bilingual: English at the root, French in `fr/` (a-propos, membres, partenaires, galerie, mentions-legales…). FR/EN switch in the menu, hreflang links, both in the sitemap. Inclusive writing (·) in French, as on the old site (except "créateurs").
+- Visual identity 2026 (input/NEW GRAPHIC DESIGN.png): black, océan abyssal #1E4694, océan numérique #05A7C7, white; Oswald 300 uppercase titles, Overpass 200 body; LABLAB logo (square in header); offset colour frames, glowing outlines, warm orange touches; black footer with the credit "Website by ANDRIX®".
 - Always write **LABLAB** in capitals. Members are called "members" (FR: "membres").
 - Positioning: a collective offering services, not a venue brochure. Keep the 9 service cards.
-- Studio rental has no fixed offer: invite people to ask for a quote.
+- Studio rental is tailored to each project: invite people to ask for a quote. Word things positively.
 - No news, agenda, opening hours or floor plan. Social links stay low-key (footer icons).
 
 ## Pages
@@ -33,7 +33,7 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 
 - Studio equipment list (`studio.html`, TODO comment).
 - Rates and access conditions (studio, co-working).
-- LABLABer quotes.
+- Member quotes.
 - Legal notice: publisher, publication director, host (`legal.html`).
 - Partner logos, white on transparent → `assets/images/partners/` (same `*-logo.png` names). `heavym`, `metropole-lyon`, `villeurbanne`, `drac` are text placeholders: update `width`/`height` when replaced.
 - Member pictures and up-to-date descriptions (`assets/images/people/`, named after each member). Julie Borgeot's text is translated from the old site.
