@@ -2,7 +2,7 @@ To do, in priority order
 Log of tasks done, wip and to be done
 
 TODO (in priority order)
-- Deploy: GitHub Action written (.github/workflows/deploy.yml, FTPS). WAITING: Alex adds the 4 FTP secrets, then push to trigger the first deploy
+- Deploy security: switch from plain FTP to SFTP if the host offers it (FTP sends the password unencrypted)
 - French translation, with hreflang links between languages (moved up: it matters for local search)
 - Compact menu on mobile (header wraps onto two lines)
 
@@ -18,6 +18,7 @@ WIP
 -
 
 DONE
+- 2026-11-27 Automatic deploy live: every push to master uploads to https://alexandrix.com/lablab-new/ over FTP (host has no FTPS); docs, Markdown and TASKLOG are not uploaded
 - 2026-11-27 Pushed master to https://github.com/andrixdev/lablab-website
 - 2026-11-27 Moodboard a–e: HUD corner brackets on service cards (hover), faint grid on alternate sections, glowing squares (About), wireframe cube (Studio), orbit diagram for values (About); warm orange touches (one bracket corner, one square, one cube edge, orbit dots, link hover)
 - 2026-11-27 SEO a–i: external links in new tabs, bold keywords, internal links (member/partner anchors), descriptive media file names, keyword page titles and h1s, canonical + og:url, sitemap.xml, robots.txt, JSON-LD LocalBusiness, Google Maps reviews link, 640px showreel for phones (6.5 MB)
