@@ -603,8 +603,8 @@ strong {
   align-items: center;
   gap: 2rem;
   padding: 2rem 2.5rem;
-  background: #fff;
-  color: #000;
+  border: 1.5px solid #fff;
+  color: var(--text);
   box-shadow: 0 0 0 5px var(--bg), -10px -10px 0 0 var(--accent);
 }
 
@@ -619,10 +619,6 @@ strong {
 .footer-card .social {
   justify-content: flex-end;
   margin: 1rem 0 0;
-}
-
-.footer-card .social img {
-  filter: invert(1);
 }
 
 .social {
