@@ -34,14 +34,10 @@ WAITING FOR ALEX (ask again)
 - Member pictures and up-to-date descriptions
 
 WIP
-- New graphic design: minor tweaks proposed on branch design-2026, awaiting Alex's review
-  - Colours: black, océan numérique #05A7C7 (accents), océan abyssal #1E4694 (frames)
-  - Fonts: Oswald 300 for titles, Overpass 200 for body text (self-hosted)
-  - Square white logo + tagline in the header, favicon from the bordered logo
-  - Offset blue frames on feature images and map, glow on service cards hover
-  - Footer: white block with black logo and océan numérique offset frame (as in the "Exemples")
+-
 
 DONE
+- 2026-11-27 New graphic design (palette, Oswald/Overpass, square logo, offset frames, white footer) merged into master
 - 2026-11-27 Absorbed the "artistic lab" text into the home intro (Find us shortened to avoid repeating it)
 - 2026-11-27 Showreel trimmed: title card and end credits removed (4.0 s → 100.5 s, 96.5 s, 17 MB)
 - 2026-11-27 Git repository created (master); input/ is git-ignored so the brief and source files are not deployed
