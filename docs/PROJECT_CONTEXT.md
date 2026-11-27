@@ -5,7 +5,7 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 ## Decisions
 
 - Static HTML/CSS, no CMS; later edits by hand or by AI. (The original brief asked for WordPress: overruled.)
-- Bilingual: English at the root, French in `fr/` (a-propos, partenaires, galerie, mentions-legales…). FR/EN switch in the menu, hreflang links, both in the sitemap. Inclusive writing (·) in French, as on the old site.
+- Bilingual: English at the root, French in `fr/` (a-propos, membres, partenaires, galerie, mentions-legales…). FR/EN switch in the menu, hreflang links, both in the sitemap. Inclusive writing (·) in French, as on the old site.
 - Visual identity 2026 (input/NEW GRAPHIC DESIGN.png): black, océan abyssal #1E4694, océan numérique #05A7C7, white; Oswald 300 uppercase titles, Overpass 200 body; LABLAB logo (square in header); offset colour frames, glowing outlines.
 - Always write **LABLAB** in capitals (also "LABLABers").
 - Positioning: a collective offering services, not a venue brochure. Keep the 9 service cards.
@@ -15,7 +15,7 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 ## Pages
 
 - `index.html`: concise one-pager (who we are, services, find us, residencies, partners, members, spaces, contact).
-- `about.html` (story, founders, values), `studio.html`, `lablabers.html`, `partners.html`, `gallery.html`, `contact.html`, `legal.html`.
+- `about.html` (story, founders, values), `studio.html`, `members.html`, `partners.html`, `gallery.html`, `contact.html`, `legal.html`.
 - Assets: `assets/{fonts,icons,video,images/{logo,services,partners,people,spaces,gallery}}`. Showreel has a 640px phone version.
 - SEO: canonical URLs, `sitemap.xml` and `robots.txt` target https://lablab.studio/; JSON-LD LocalBusiness on the home page.
 

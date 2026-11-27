@@ -4,13 +4,12 @@ Log of tasks done, wip and to be done
 TODO (in priority order)
 - Deploy security: switch from plain FTP to SFTP if the host offers it (FTP sends the password unencrypted)
 - Provide technical details about the studio
-- Studio page cube: redraw with a slight rotation around the up axis; dashed lines must match the hidden cube edges
 - Compact menu on mobile (header wraps onto two lines)
 
 WAITING FOR ALEX (ask again)
 - Studio equipment list
 - Rates and access conditions (studio, co-working)
-- LABLABer quotes
+- Member quotes
 - Legal notice: publisher, publication director, host
 - Partner logos, white on transparent (HeavyM, Métropole de Lyon, Villeurbanne, DRAC are text placeholders; Notch and TouchDesigner are dark)
 - Member pictures and up-to-date descriptions
@@ -19,6 +18,11 @@ WIP
 -
 
 DONE
+- 2026-11-27 Studio cube redrawn from a real 3D projection (30° turn around the up axis); dashed lines are the true hidden edges
+- 2026-11-27 "LABLABers" renamed "members" everywhere (members.html, fr/membres.html, texts, links, sitemap)
+- 2026-11-27 About page: new "Our members" section linking to the members page (EN + FR)
+- 2026-11-27 Studio rental text reworded positively (tailored offer), EN + FR; "créateur·rice·s" → "créateurs"
+- 2026-11-27 Cache-busting: styles.css?v=2 and script.js?v=2 (the footer looked white because of a cached stylesheet)
 - 2026-11-27 French translation: fr/ folder (index, a-propos, studio, lablabers, partenaires, galerie, contact, mentions-legales), FR/EN switch in the menu, hreflang links, sitemap; original French texts reused from the old site and the brief
 - 2026-11-27 Footer moved to black: white outline, white logo and text, blue offset frame kept
 - 2026-11-27 Automatic deploy live: every push to master uploads to https://alexandrix.com/lablab-new/ over FTP (host has no FTPS); docs, Markdown and TASKLOG are not uploaded
