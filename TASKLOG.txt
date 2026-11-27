@@ -1,0 +1,34 @@
+To do, in priority order
+Log of tasks done, wip and to be done
+
+TODO (in priority order)
+- Absorb "LabLab is an artistic lab that offers a research and creation space for new audiovisual, immersive, and interactive experiences.
+Located at Pôle PIXEL, the heart of Lyon's creative industries, this space fosters exchanges between creators in film, video games, and digital arts, blending technology with the challenges of tomorrow.
+
+The immersive studio is also available for rent: filming, photoshoots, virtual productions, residencies, etc."
+- Scan image file "NEW GRAPHIC DESIGN", this is the new graphic design for the future. I coded it by hand at and the HTML and CSS are available in codepen-lablab-html.txt and codepen-lablab-css.txt. You are free to incorporate a part or all of this to tweak the current website design in that direction. Propose on a new branch. The current homepage is already satisfying, just propose minor tweaks.
+  - Header logo: square version, latest files in input/Logos. Keep tagline "Digital Arts Studio & Creative Workforce".
+- Absorb "Moodboard Refonte site internet + identité visuelle 2026.pdf" and make visual design suggestions
+- Absorb "Recommandations SEO + stratégie site internet - Feuille 1.pdf" and make SEO suggestions
+- trim showreel to remove intro and outro when we see text
+- Deploy: Alex pushes the repo to GitHub; master auto-deploys to alexandrix.com/lablab-new
+- Compact menu on mobile (header wraps onto two lines)
+- French translation (last)
+
+WAITING FOR ALEX (ask again)
+- Studio equipment list
+- Rates and access conditions (studio, co-working)
+- LABLABer quotes
+- Legal notice: publisher, publication director, host
+- Partner logos, white on transparent (HeavyM, Métropole de Lyon, Villeurbanne, DRAC are text placeholders; Notch and TouchDesigner are dark)
+- Member pictures and up-to-date descriptions
+
+WIP
+-
+
+DONE
+- 2026-11-27 Static rebuild of the WIP homepage (assets, showreel 72 MB → 17 MB)
+- 2026-11-27 Partners list updated (technical + institutional)
+- 2026-11-27 Sticky header that hides on scroll down
+- 2026-11-27 Brief review → multi-page site (About, Studio, LABLABers, Partners, Gallery, Contact, Legal), SEO meta
+- 2026-11-27 Domain noted in docs: dev at alexandrix.com/lablab(-new), final at lablab.studio
