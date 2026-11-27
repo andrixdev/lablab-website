@@ -16,7 +16,8 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 
 - `index.html`: concise one-pager (who we are, services, find us, residencies, partners, members, spaces, contact).
 - `about.html` (story, founders, values), `studio.html`, `lablabers.html`, `partners.html`, `gallery.html`, `contact.html`, `legal.html`.
-- Assets: `assets/{fonts,icons,video,images/{services,partners,people,spaces,gallery}}`.
+- Assets: `assets/{fonts,icons,video,images/{logo,services,partners,people,spaces,gallery}}`. Showreel has a 640px phone version.
+- SEO: canonical URLs, `sitemap.xml` and `robots.txt` target https://lablab.studio/; JSON-LD LocalBusiness on the home page.
 
 ## Sources
 
@@ -33,6 +34,6 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 - Rates and access conditions (studio, co-working).
 - LABLABer quotes.
 - Legal notice: publisher, publication director, host (`legal.html`).
-- Partner logos, white on transparent → `assets/images/partners/` (same names). `heavym`, `metropole-lyon`, `villeurbanne`, `drac` are text placeholders: update `width`/`height` when replaced.
-- Member pictures and up-to-date descriptions (`assets/images/people/`). Julie Borgeot's text is translated from the old site.
+- Partner logos, white on transparent → `assets/images/partners/` (same `*-logo.png` names). `heavym`, `metropole-lyon`, `villeurbanne`, `drac` are text placeholders: update `width`/`height` when replaced.
+- Member pictures and up-to-date descriptions (`assets/images/people/`, named after each member). Julie Borgeot's text is translated from the old site.
 

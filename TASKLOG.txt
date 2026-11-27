@@ -2,28 +2,9 @@ To do, in priority order
 Log of tasks done, wip and to be done
 
 TODO (in priority order)
-- Moodboard: visual design suggestions (from "Moodboard Refonte site internet + identité visuelle 2026.pdf"). Pick the ones you want:
-  a. HUD-style corner brackets on images and cards (thin océan numérique lines), shown on hover
-  b. Very faint grid / dot pattern on alternate sections, like the moodboard's interfaces
-  c. The codepen's glowing bouncing squares as a small animated motif (Studio page, "Immersive Cube"), off when the visitor prefers reduced motion
-  d. A glowing wireframe cube drawn in CSS or SVG on the Studio page, echoing the moodboard cubes and the real cubic studio
-  e. Concentric orbit diagram (moodboard p.4) for the four values on the About page
-  f. Numbered HUD eyebrows ("01 / SERVICES", "02 / FIND US"…)
-  Not suggested: the warm orange of moodboard p.7, which is outside the validated palette
-- SEO suggestions (from Océane's "Recommandations SEO" sheet + static-site basics). Pick the ones you want:
-  a. External links open in a new tab (Océane's first point)
-  b. Agree a keyword list (immersive studio Lyon, virtual production, video mapping, digital arts, co-working artists Villeurbanne, Pôle PIXEL…) and put the first occurrence per page in bold
-  c. More internal links in texts: member names → their entry on lablabers.html, "studio" → studio.html, partners → partners.html
-  d. Rename media files with descriptive names (e.g. lablab-immersive-studio-filming.jpg)
-  e. Keyword-rich page titles and h1s (e.g. "Immersive studio for rent in Lyon – LABLAB")
-  f. Technical basics: canonical URLs to lablab.studio, sitemap.xml, robots.txt, og:url
-  g. Structured data (JSON-LD Organization/LocalBusiness: address, email, Instagram, Facebook)
-  h. Keep the LABLABers section up to date (Océane's conclusion); link the Google Business profile (5.0 ★, 23 reviews)
-  i. Lighter mobile showreel (smaller version for phones) to help page speed
-  j. The French version matters for local search: consider moving it up, with hreflang links between languages
-- Deploy: Alex pushes the repo to GitHub; master auto-deploys to alexandrix.com/lablab-new
+- Deploy: push master to the GitHub repo (WAITING: repo URL from Alex); master auto-deploys to alexandrix.com/lablab-new
+- French translation, with hreflang links between languages (moved up: it matters for local search)
 - Compact menu on mobile (header wraps onto two lines)
-- French translation (last)
 
 WAITING FOR ALEX (ask again)
 - Studio equipment list
@@ -37,6 +18,9 @@ WIP
 -
 
 DONE
+- 2026-11-27 Moodboard a–e: HUD corner brackets on service cards (hover), faint grid on alternate sections, glowing squares (About), wireframe cube (Studio), orbit diagram for values (About); warm orange touches (one bracket corner, one square, one cube edge, orbit dots, link hover)
+- 2026-11-27 SEO a–i: external links in new tabs, bold keywords, internal links (member/partner anchors), descriptive media file names, keyword page titles and h1s, canonical + og:url, sitemap.xml, robots.txt, JSON-LD LocalBusiness, Google Maps reviews link, 640px showreel for phones (6.5 MB)
+- 2026-11-27 design-2026 branch deleted after merge
 - 2026-11-27 New graphic design (palette, Oswald/Overpass, square logo, offset frames, white footer) merged into master
 - 2026-11-27 Absorbed the "artistic lab" text into the home intro (Find us shortened to avoid repeating it)
 - 2026-11-27 Showreel trimmed: title card and end credits removed (4.0 s → 100.5 s, 96.5 s, 17 MB)

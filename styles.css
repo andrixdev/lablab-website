@@ -22,6 +22,7 @@
   --accent: #05a7c7;
   --deep: #1e4694;
   --glow: hsl(190 95% 50% / 0.6);
+  --warm: hsl(28 95% 55%);
 
   color-scheme: dark;
   font: 200 1rem/1.75 "Overpass", sans-serif;
@@ -101,9 +102,25 @@ address {
   padding-block: clamp(4rem, 9vw, 8rem);
 }
 
+/* Faint HUD grid on alternate sections (moodboard). */
 .alt {
   --ring: var(--bg-alt);
-  background: var(--bg-alt);
+  background:
+    linear-gradient(rgb(255 255 255 / 0.025) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(90deg, rgb(255 255 255 / 0.025) 1px, transparent 1px) 0 0 / 40px 40px,
+    var(--bg-alt);
+}
+
+main a:not(.button, .service):hover {
+  color: var(--warm);
+}
+
+h3 a {
+  text-decoration: none;
+}
+
+[id] {
+  scroll-margin-top: 2rem;
 }
 
 strong {
@@ -329,12 +346,163 @@ strong {
   box-shadow: 0 0 0 1.5px var(--accent), 0 0 1.25rem var(--glow);
 }
 
+/* HUD corner brackets, shown on hover: three océan corners, one warm. */
+.service::after {
+  --c: var(--accent);
+  --l: 1.5rem;
+  content: "";
+  position: absolute;
+  inset: 0.75rem;
+  z-index: -1;
+  background:
+    linear-gradient(var(--c), var(--c)) top left / var(--l) 1.5px,
+    linear-gradient(var(--c), var(--c)) top left / 1.5px var(--l),
+    linear-gradient(var(--c), var(--c)) top right / var(--l) 1.5px,
+    linear-gradient(var(--c), var(--c)) top right / 1.5px var(--l),
+    linear-gradient(var(--c), var(--c)) bottom left / var(--l) 1.5px,
+    linear-gradient(var(--c), var(--c)) bottom left / 1.5px var(--l),
+    linear-gradient(var(--warm), var(--warm)) bottom right / var(--l) 1.5px,
+    linear-gradient(var(--warm), var(--warm)) bottom right / 1.5px var(--l);
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.service:hover::after {
+  opacity: 1;
+}
+
 .service h3 {
   margin: 0;
 }
 
 .service span {
   color: var(--accent);
+}
+
+/* Moodboard motifs: glowing squares, wireframe cube, orbits. */
+.squares {
+  --size: 7rem;
+  position: relative;
+  justify-self: center;
+  width: calc(var(--size) * 2.5);
+  height: calc(var(--size) * 2.5);
+}
+
+.squares span {
+  position: absolute;
+  inset: 0;
+  width: var(--size);
+  height: var(--size);
+  margin: auto;
+  border: 1.5px solid hsl(190 95% 60% / 0.85);
+  box-shadow: 0 0 0.7rem var(--glow) inset, 0 0 0.35rem var(--glow);
+  transform: rotate(45deg);
+  animation: bounce 2.4s cubic-bezier(0.65, 0.05, 0.36, 1) infinite alternate;
+}
+
+.squares span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.squares span:nth-child(3) {
+  --glow: hsl(28 95% 55% / 0.6);
+  border-color: var(--warm);
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  45%,
+  55% {
+    transform: rotate(45deg) scale(1.8);
+  }
+}
+
+.cube,
+.orbits {
+  justify-self: center;
+  width: min(100%, 20rem);
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 6px var(--glow));
+}
+
+.cube {
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+.cube .hidden-edge {
+  stroke-dasharray: 4 6;
+  opacity: 0.4;
+}
+
+.cube .grid-line {
+  stroke-width: 0.75;
+  opacity: 0.35;
+}
+
+.cube .warm {
+  stroke: var(--warm);
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-0.75rem);
+  }
+}
+
+.orbits {
+  stroke: rgb(255 255 255 / 0.35);
+  stroke-width: 1;
+}
+
+.orbits .core {
+  fill: var(--deep);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.orbits .dot {
+  fill: var(--accent);
+  stroke: none;
+}
+
+.orbits .dot.warm {
+  fill: var(--warm);
+}
+
+.orbits .dot.white {
+  fill: #fff;
+}
+
+.orbits .ring {
+  transform-origin: 150px 150px;
+  animation: spin 60s linear infinite;
+}
+
+.orbits .ring.slow {
+  animation-duration: 120s;
+  animation-direction: reverse;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .squares span,
+  .cube,
+  .orbits .ring {
+    animation: none;
+  }
+}
+
+.values {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  margin-top: 0;
 }
 
 .map {
@@ -417,7 +585,7 @@ strong {
 .contact {
   padding-block: 10rem;
   background: linear-gradient(rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.55)),
-    var(--image, url("assets/images/services/residencies.jpg")) center / cover;
+    var(--image, url("assets/images/services/artist-residency-immersive-studio.jpg")) center / cover;
   text-align: center;
 }
 
