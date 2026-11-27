@@ -12,6 +12,13 @@
   font-display: swap;
 }
 
+/* Overpass draws no middle dot (·), used in French inclusive writing: borrow it from a system font. */
+@font-face {
+  font-family: "Middle Dot";
+  src: local("Arial"), local("Helvetica"), local("Roboto"), local("DejaVu Sans");
+  unicode-range: U+00B7;
+}
+
 /* Colours from the 2026 identity: noir, océan abyssal, océan numérique, blanc. */
 :root {
   --bg: #000;
@@ -25,7 +32,7 @@
   --warm: hsl(28 95% 55%);
 
   color-scheme: dark;
-  font: 200 1rem/1.75 "Overpass", sans-serif;
+  font: 200 1rem/1.75 "Middle Dot", "Overpass", sans-serif;
   color: var(--text);
   background: var(--bg);
 }
