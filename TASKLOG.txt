@@ -2,10 +2,25 @@ To do, in priority order
 Log of tasks done, wip and to be done
 
 TODO (in priority order)
-- Scan image file "NEW GRAPHIC DESIGN", this is the new graphic design for the future. I coded it by hand at and the HTML and CSS are available in codepen-lablab-html.txt and codepen-lablab-css.txt. You are free to incorporate a part or all of this to tweak the current website design in that direction. Propose on a new branch. The current homepage is already satisfying, just propose minor tweaks.
-  - Header logo: square version, latest files in input/Logos. Keep tagline "Digital Arts Studio & Creative Workforce".
-- Absorb "Moodboard Refonte site internet + identité visuelle 2026.pdf" and make visual design suggestions
-- Absorb "Recommandations SEO + stratégie site internet - Feuille 1.pdf" and make SEO suggestions
+- Moodboard: visual design suggestions (from "Moodboard Refonte site internet + identité visuelle 2026.pdf"). Pick the ones you want:
+  a. HUD-style corner brackets on images and cards (thin océan numérique lines), shown on hover
+  b. Very faint grid / dot pattern on alternate sections, like the moodboard's interfaces
+  c. The codepen's glowing bouncing squares as a small animated motif (Studio page, "Immersive Cube"), off when the visitor prefers reduced motion
+  d. A glowing wireframe cube drawn in CSS or SVG on the Studio page, echoing the moodboard cubes and the real cubic studio
+  e. Concentric orbit diagram (moodboard p.4) for the four values on the About page
+  f. Numbered HUD eyebrows ("01 / SERVICES", "02 / FIND US"…)
+  Not suggested: the warm orange of moodboard p.7, which is outside the validated palette
+- SEO suggestions (from Océane's "Recommandations SEO" sheet + static-site basics). Pick the ones you want:
+  a. External links open in a new tab (Océane's first point)
+  b. Agree a keyword list (immersive studio Lyon, virtual production, video mapping, digital arts, co-working artists Villeurbanne, Pôle PIXEL…) and put the first occurrence per page in bold
+  c. More internal links in texts: member names → their entry on lablabers.html, "studio" → studio.html, partners → partners.html
+  d. Rename media files with descriptive names (e.g. lablab-immersive-studio-filming.jpg)
+  e. Keyword-rich page titles and h1s (e.g. "Immersive studio for rent in Lyon – LABLAB")
+  f. Technical basics: canonical URLs to lablab.studio, sitemap.xml, robots.txt, og:url
+  g. Structured data (JSON-LD Organization/LocalBusiness: address, email, Instagram, Facebook)
+  h. Keep the LABLABers section up to date (Océane's conclusion); link the Google Business profile (5.0 ★, 23 reviews)
+  i. Lighter mobile showreel (smaller version for phones) to help page speed
+  j. The French version matters for local search: consider moving it up, with hreflang links between languages
 - Deploy: Alex pushes the repo to GitHub; master auto-deploys to alexandrix.com/lablab-new
 - Compact menu on mobile (header wraps onto two lines)
 - French translation (last)
@@ -19,7 +34,12 @@ WAITING FOR ALEX (ask again)
 - Member pictures and up-to-date descriptions
 
 WIP
--
+- New graphic design: minor tweaks proposed on branch design-2026, awaiting Alex's review
+  - Colours: black, océan numérique #05A7C7 (accents), océan abyssal #1E4694 (frames)
+  - Fonts: Oswald 300 for titles, Overpass 200 for body text (self-hosted)
+  - Square white logo + tagline in the header, favicon from the bordered logo
+  - Offset blue frames on feature images and map, glow on service cards hover
+  - Footer: white block with black logo and océan numérique offset frame (as in the "Exemples")
 
 DONE
 - 2026-11-27 Absorbed the "artistic lab" text into the home intro (Find us shortened to avoid repeating it)

@@ -5,15 +5,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Overpass";
+  src: url("assets/fonts/overpass.woff2") format("woff2");
+  font-weight: 100 400;
+  font-display: swap;
+}
+
+/* Colours from the 2026 identity: noir, océan abyssal, océan numérique, blanc. */
 :root {
-  --bg: #111;
-  --bg-alt: #212121;
-  --text: #eee;
+  --bg: #000;
+  --bg-alt: #111;
+  --ring: var(--bg);
+  --text: #fff;
   --muted: #8a8a8a;
-  --accent: #0bb4aa;
+  --accent: #05a7c7;
+  --deep: #1e4694;
+  --glow: hsl(190 95% 50% / 0.6);
 
   color-scheme: dark;
-  font: 300 1rem/1.75 "Oswald", "Arial Narrow", sans-serif;
+  font: 200 1rem/1.75 "Overpass", sans-serif;
   color: var(--text);
   background: var(--bg);
 }
@@ -38,9 +49,20 @@ a {
 
 h1,
 h2,
+h3,
+.eyebrow,
+.button,
+.bar,
+.service span,
+.logos figcaption {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+}
+
+h1,
+h2,
 h3 {
   margin: 0 0 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25;
   text-transform: uppercase;
 }
@@ -80,7 +102,12 @@ address {
 }
 
 .alt {
+  --ring: var(--bg-alt);
   background: var(--bg-alt);
+}
+
+strong {
+  font-weight: 400;
 }
 
 .eyebrow {
@@ -97,8 +124,8 @@ address {
 .button {
   display: inline-block;
   padding: 0.5em 1.2em;
-  border: 2px solid currentColor;
-  font-weight: 400;
+  border: 1.5px solid currentColor;
+  font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
   transition: background 0.2s, color 0.2s;
@@ -124,6 +151,12 @@ address {
   display: grid;
   gap: 3rem;
   align-items: center;
+}
+
+/* Offset frame: a coloured block peeking out top-left, as in the identity's layout examples. */
+.split > img,
+.split > .map {
+  box-shadow: 0 0 0 5px var(--ring), -10px -10px 0 0 var(--deep);
 }
 
 .center {
@@ -163,7 +196,7 @@ address {
 }
 
 .topbar.scrolled {
-  background: rgb(17 17 17 / 0.92);
+  background: rgb(0 0 0 / 0.9);
 }
 
 .topbar.hidden {
@@ -176,16 +209,27 @@ address {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem 2rem;
-  padding-block: 1.5rem;
-  font-weight: 400;
+  padding-block: 1.25rem;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 .site-title {
-  max-width: 24ch;
-  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
-  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   text-decoration: none;
+}
+
+.site-title img {
+  width: auto;
+  height: 3.5rem;
+}
+
+.site-title span {
+  max-width: 14ch;
+  font-size: 0.95rem;
+  line-height: 1.35;
 }
 
 .nav {
@@ -229,9 +273,7 @@ address {
   z-index: 1;
   margin: 0;
   font-size: clamp(2.25rem, 5vw, 3.25rem);
-  font-weight: 500;
   line-height: 1.1;
-  text-transform: none;
 }
 
 /* Sections */
@@ -267,6 +309,10 @@ address {
   transition: transform 0.4s;
 }
 
+.service {
+  transition: box-shadow 0.3s;
+}
+
 .service::before {
   content: "";
   position: absolute;
@@ -277,6 +323,10 @@ address {
 
 .service:hover img {
   transform: scale(1.04);
+}
+
+.service:hover {
+  box-shadow: 0 0 0 1.5px var(--accent), 0 0 1.25rem var(--glow);
 }
 
 .service h3 {
@@ -374,23 +424,38 @@ address {
 /* Footer */
 
 .footer {
-  padding-block: 3rem 2rem;
-  border-top: 3rem solid var(--bg-alt);
+  padding-block: 5rem 2rem;
   color: var(--muted);
 }
 
-.footer h2 {
-  margin-bottom: 1rem;
-  color: var(--text);
-  font: 600 1.15rem/1.4 system-ui, sans-serif;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+.footer-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
+  padding: 2rem 2.5rem;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 0 5px var(--bg), -10px -10px 0 0 var(--accent);
 }
 
+.footer-card > img {
+  width: min(15rem, 100%);
+}
+
+.footer-card address {
+  text-align: right;
+}
+
+.footer-card .social {
+  justify-content: flex-end;
+  margin: 1rem 0 0;
+}
+
+.footer-card .social img {
+  filter: invert(1);
+}
 
 .social {
   display: flex;
