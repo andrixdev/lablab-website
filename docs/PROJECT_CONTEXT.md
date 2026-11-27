@@ -7,7 +7,7 @@ Static site for LABLAB: a gathering of independent artists, engineers and small 
 - Static HTML/CSS, no CMS; later edits by hand or by AI. (The original brief asked for WordPress: overruled.)
 - Bilingual: English at the root, French in `fr/` (a-propos, membres, partenaires, galerie, mentions-legales…). FR/EN switch in the menu, hreflang links, both in the sitemap. Inclusive writing (·) in French, as on the old site.
 - Visual identity 2026 (input/NEW GRAPHIC DESIGN.png): black, océan abyssal #1E4694, océan numérique #05A7C7, white; Oswald 300 uppercase titles, Overpass 200 body; LABLAB logo (square in header); offset colour frames, glowing outlines.
-- Always write **LABLAB** in capitals (also "LABLABers").
+- Always write **LABLAB** in capitals. Members are called "members" (FR: "membres").
 - Positioning: a collective offering services, not a venue brochure. Keep the 9 service cards.
 - Studio rental has no fixed offer: invite people to ask for a quote.
 - No news, agenda, opening hours or floor plan. Social links stay low-key (footer icons).
