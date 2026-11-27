@@ -282,7 +282,7 @@ strong {
   align-items: flex-end;
   min-height: clamp(18rem, 30vw, 26rem);
   padding-block: 9rem 2.5rem;
-  background: #000 var(--image, none) center / cover;
+  background: #000 center / cover;
 }
 
 .page-hero::after {
@@ -589,11 +589,23 @@ strong {
   font-size: 0.85rem;
 }
 
+/* Background images are set inline in the pages: url() resolves against the page, so it works from fr/ too. */
 .contact {
+  position: relative;
   padding-block: 10rem;
-  background: linear-gradient(rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.55)),
-    var(--image, url("assets/images/services/artist-residency-immersive-studio.jpg")) center / cover;
+  background: #000 center / cover;
   text-align: center;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.55);
+}
+
+.contact .wrap {
+  position: relative;
 }
 
 /* Footer */
@@ -652,6 +664,13 @@ strong {
   padding-top: 2rem;
   border-top: 1px solid #2a2a2a;
   font-size: 0.85rem;
+}
+
+/* The footer tagline gives way on small screens. */
+@media (max-width: 700px) {
+  .copyright .wide {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {

@@ -18,6 +18,9 @@ WIP
 -
 
 DONE
+- 2026-11-27 Fixed broken header images on French pages: background images are now set inline (CSS-variable url() resolved against the root stylesheet)
+- 2026-11-27 Footer credit "Website by ANDRIX®" / "Site réalisé par ANDRIX®"; tagline after the copyright hidden on small screens
+- 2026-11-27 Studio cube rotation reduced to 10°
 - 2026-11-27 Studio cube redrawn from a real 3D projection (30° turn around the up axis); dashed lines are the true hidden edges
 - 2026-11-27 "LABLABers" renamed "members" everywhere (members.html, fr/membres.html, texts, links, sitemap)
 - 2026-11-27 About page: new "Our members" section linking to the members page (EN + FR)
